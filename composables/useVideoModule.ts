@@ -24,10 +24,12 @@ const watchModal = ref(false)
 const loading = ref(false)
 const searchTerm = ref<string>('')
 const getVideoList = async () => {
+    loading.value = true
     const querySnapshot = await getDocs(collection(db, "videos"));
     querySnapshot.forEach((doc) => {
         videoList.value.push(doc.data());
     });
+    loading.value = false
     return videoList.value
 }
 const saveVideoId = async (video: YoutubeAPIResponse) => {
