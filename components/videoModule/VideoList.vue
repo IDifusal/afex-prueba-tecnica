@@ -18,5 +18,6 @@ const props = defineProps<{ items: any }>()
     min-width: 0;
     flex-wrap: wrap;
     margin-top: 134px;
+    place-content:flex-start
 }
 </style>

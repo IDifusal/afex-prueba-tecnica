@@ -1,5 +1,5 @@
 <template>
-    <input @input="updateTerm"  v-model="searchTerm"  type="text" placeholder="Añadir" class="form-control w-8/12" />
+    <input @input="updateTerm"  required v-model="searchTerm"  type="text" placeholder="Escribe una URL o cualquier cosa!" class="form-control w-8/12" />
 </template>
 
 <script setup lang="ts">

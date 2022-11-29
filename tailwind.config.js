@@ -3,7 +3,8 @@ module.exports = {
   content: [],
   theme: {
       colors:{
-        'primary':'#136AE4'
+        'primary':'#136AE4',
+        'sucess':'#66FFFF'
       }
   },
   plugins: [],

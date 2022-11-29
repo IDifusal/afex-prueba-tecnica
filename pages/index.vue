@@ -1,32 +1,29 @@
 <script setup lang="ts">
 const useVideos = useVideoModule()
-const isModalVisible = ref(true)
-const modalWatch = ref(false)
-const inputText = ref('')
-const closeModal = () => {
-    isModalVisible.value = false
-    modalWatch.value = false
+const closeModal = ()=>{
+    useVideos.deleteModal.value = false
+    useVideos.watchModal.value = false
 }
 onMounted(() =>
     useVideos.getVideoList(),
 )
 
 const deleteVideo =()=>{
-    console.log('deleting')
+    useVideos.deleteVideoByEtag(useVideos.active.value)
 }
-const addVideo = () => {
-    useVideos.searchVideoDetail(useVideos.searchTerm.value)
+const addVideo = async() => {
+    await useVideos.searchVideoDetail(useVideos.searchTerm.value)
 }
 </script>
 <template>
-    <SharedModal v-if="useVideos.deleteModal.value" @closeModal='closeModal'>
+    <SharedModal v-if="useVideos.deleteModal.value" >
         <h3 class="mb-[45px]">¿Seguro que quieres eliminar este video?</h3>
         <div class="buttons gap-[29px] flex place-content-end">
             <SharedButton @action='closeModal' color="white" title="Cancelar" />
             <SharedButton @action='deleteVideo' title="Eliminar" />
         </div>
     </SharedModal>
-    <SharedModal v-if="useVideos.watchModal.value" @closeModal='closeModal'>
+    <SharedModal v-if="useVideos.watchModal.value" >
         <div v-if="useVideos.active.value" class="watch-content flex">
             <div class="w-1/2">
                 <iframe height="308"  class="w-full mb-4"
@@ -40,10 +37,10 @@ const addVideo = () => {
             </div>
         </div>
     </SharedModal>
+    <SharedLoading v-if='useVideos.loading.value'/>
     <div class="font-medium pt-[120px]">
         <div class="topbar flex flex-col container m-auto">
             <h2 class="text-[28px]">Añadir nuevo video</h2>
-            {{useVideos.active.value}}
         <form @submit.prevent="addVideo">
             <SharedInputControl/>
             <SharedButton title='Añadir' @action='addVideo' />
