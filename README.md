@@ -1,42 +1,13 @@
-# Nuxt 3 Minimal Starter
+# Afex Technical Test
+# Nuxt 3 | Firebase | Youtube API | Composables | useQuery
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Desde que descrubi Nuxt 2 lo considero una herramienta impresindible para desarrollar con Vue, Nuxt 3 fue lanzado la semana pasada quiero practicarlo lo mas que se pueda aproveche este proyecto para aprender mientras resolvia la prueba, la documentacion [Nuxt 3 documentacion](https://nuxt.com/docs/getting-started/introduction).
 
 ## Setup
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
+![Watching a Video](https://dc695.4shared.com/img/9LIkyc-Kjq/s23/184c1e11300/FireShot_Capture_034_-_Afex_-_.png)
+![Watching a Video](https://dc695.4shared.com/img/ysytZpG7fa/s23/184c1e10f18/FireShot_Capture_035_-_Afex_-_.png)
 
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![Adding Videos](https://dc695.4shared.com/img/K-kBEisgfa/s23/184c1e10b30/FireShot_Capture_037_-_Afex_-_.png)
