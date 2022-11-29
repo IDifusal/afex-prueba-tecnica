@@ -1,7 +1,9 @@
 # Afex Technical Test
-# Nuxt 3 | Firebase | Youtube API | Composables | useQuery
+# Nuxt 3 | Firebase | Youtube API | Composables | useQuery | Tailwind
 
 Desde que descrubi Nuxt 2 lo considero una herramienta impresindible para desarrollar con Vue, Nuxt 3 fue lanzado la semana pasada quiero practicarlo lo mas que se pueda aproveche este proyecto para aprender mientras resolvia la prueba, la documentacion [Nuxt 3 documentacion](https://nuxt.com/docs/getting-started/introduction).
+## Pruebalo!
+[https://afex-prueba-tecnica.vercel.app/](https://afex-prueba-tecnica.vercel.app/)
 
 ## Setup
 
