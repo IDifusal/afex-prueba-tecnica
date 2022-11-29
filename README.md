@@ -6,8 +6,10 @@ Desde que descrubi Nuxt 2 lo considero una herramienta impresindible para desarr
 ## Setup
 
 npm install
-```
+npm run dev 
+### List Videos
 ![Watching a Video](https://dc695.4shared.com/img/9LIkyc-Kjq/s23/184c1e11300/FireShot_Capture_034_-_Afex_-_.png)
+### Modal Video
 ![Watching a Video](https://dc695.4shared.com/img/ysytZpG7fa/s23/184c1e10f18/FireShot_Capture_035_-_Afex_-_.png)
-
+### Adding Videos
 ![Adding Videos](https://dc695.4shared.com/img/K-kBEisgfa/s23/184c1e10b30/FireShot_Capture_037_-_Afex_-_.png)
